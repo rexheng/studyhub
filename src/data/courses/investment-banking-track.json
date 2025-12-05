@@ -1,0 +1,469 @@
+{
+  "track": {
+    "title": "Investment Banking Technical Interview Mastery",
+    "description": "Comprehensive technical preparation for investment banking interviews based on BIWS methodology",
+    "slug": "ib-technical-interview",
+    "modules": [
+      {
+        "title": "Finance Fundamentals",
+        "description": "Core finance concepts including time value of money, NPV, and IRR",
+        "order": 1,
+        "slug": "finance-fundamentals",
+        "lessons": [
+          {
+            "title": "Time Value of Money & Discount Rates",
+            "slug": "time-value-money",
+            "order": 1,
+            "content": "# Time Value of Money & Discount Rates\n\n## Core Principle\n\nMoney today is worth MORE than money tomorrow because you could invest it today and earn more by tomorrow.\n\n## Key Concepts\n\n### Present Value (PV)\n\nThe present value formula:\n```\nPV = Future Value / (1 + Discount Rate)^# Years\n```\n\n### Discount Rate\n\nThe discount rate measures both:\n- **Risk** of the investment\n- **Potential returns** of the investment\n\nIt represents the annualised returns you're expecting or targeting on other, similar investments.\n\n## Investment Decision Framework\n\n### When to Invest\n- IRR > Discount Rate\n- NPV > 0\n\n### When NOT to Invest\n- IRR < Discount Rate\n- NPV < 0\n\n## Practical Application\n\nThe discount rate acts as your 'hurdle rate' - the minimum return you need to justify an investment given its risk profile and opportunity cost.",
+            "questions": [
+              {
+                "text": "Why is money today worth more than money tomorrow?",
+                "type": "multiple_choice",
+                "difficulty": "easy",
+                "options": [
+                  { "text": "Because you could invest it today and earn returns", "isCorrect": true, "explanation": "Correct! Money today can be invested to generate returns, making it worth more than the same amount in the future." },
+                  { "text": "Because of inflation only", "isCorrect": false, "explanation": "Inflation is one factor, but the main reason is the opportunity to invest and earn returns." },
+                  { "text": "Because banks charge interest", "isCorrect": false, "explanation": "This relates to borrowing costs, not the fundamental time value principle." },
+                  { "text": "Because of tax implications", "isCorrect": false, "explanation": "Taxes affect returns but aren't the core reason for time value of money." }
+                ]
+              },
+              {
+                "text": "If an investment has an IRR of 15% and your discount rate is 12%, should you invest?",
+                "type": "multiple_choice",
+                "difficulty": "medium",
+                "options": [
+                  { "text": "Yes, because IRR > Discount Rate", "isCorrect": true, "explanation": "Correct! When IRR exceeds the discount rate, the investment is expected to generate returns above your required threshold." },
+                  { "text": "No, because the IRR is too high", "isCorrect": false, "explanation": "A higher IRR is favourable, not a reason to reject the investment." },
+                  { "text": "Need more information", "isCorrect": false, "explanation": "The IRR vs discount rate comparison is sufficient for the investment decision." },
+                  { "text": "No, because 15% is risky", "isCorrect": false, "explanation": "The discount rate already accounts for risk; IRR > discount rate means invest." }
+                ]
+              }
+            ]
+          },
+          {
+            "title": "NPV and IRR Analysis",
+            "slug": "npv-irr-analysis",
+            "order": 2,
+            "content": "# NPV and IRR Analysis\n\n## Net Present Value (NPV)\n\n**Formula:** NPV = Present Value - Upfront Cost or Asking Price\n\nNPV measures the value created by an investment in today's pounds.\n\n### Decision Rule\n- **NPV > 0**: Investment creates value - proceed\n- **NPV < 0**: Investment destroys value - reject\n- **NPV = 0**: Investment breaks even - indifferent\n\n## Internal Rate of Return (IRR)\n\nThe IRR is the annualised return you expect to earn from this specific investment, regardless of what similar investments offer.\n\n### What IRR Represents\n- Like the compound interest rate on a simple investment\n- The discount rate that makes NPV = 0\n- Your actual expected return from the investment\n\n### IRR vs Discount Rate\n- **Discount Rate**: What you COULD earn elsewhere (opportunity cost)\n- **IRR**: What you WILL earn on this investment\n\n## Relationship Between NPV and IRR\n\n- When IRR > Discount Rate → NPV > 0\n- When IRR < Discount Rate → NPV < 0\n- When IRR = Discount Rate → NPV = 0\n\n## Practical Example\n\nInvestment opportunity:\n- Cost: £100,000 today\n- Expected cash flows: £30,000/year for 5 years\n- Discount rate: 10%\n\nIf IRR = 15.2%, then NPV > 0, so invest!\n\n## Common Pitfalls\n\n1. **Multiple IRRs**: Can occur with unconventional cash flow patterns\n2. **Scale differences**: IRR ignores investment size\n3. **Reinvestment assumption**: IRR assumes reinvestment at the IRR rate",
+            "questions": [
+              {
+                "text": "What does a positive NPV indicate?",
+                "type": "multiple_choice",
+                "difficulty": "easy",
+                "options": [
+                  { "text": "The investment creates value and should be pursued", "isCorrect": true, "explanation": "Correct! Positive NPV means the present value of future cash flows exceeds the initial investment." },
+                  { "text": "The investment is too risky", "isCorrect": false, "explanation": "NPV already accounts for risk through the discount rate." },
+                  { "text": "The IRR is negative", "isCorrect": false, "explanation": "Positive NPV actually means IRR > discount rate." },
+                  { "text": "The payback period is too long", "isCorrect": false, "explanation": "NPV considers all cash flows regardless of timing; positive NPV is favourable." }
+                ]
+              },
+              {
+                "text": "IRR represents:",
+                "type": "multiple_choice",
+                "difficulty": "medium",
+                "options": [
+                  { "text": "The annualised return expected from this specific investment", "isCorrect": true, "explanation": "Correct! IRR is the compound annual growth rate of the investment." },
+                  { "text": "The market risk premium", "isCorrect": false, "explanation": "Market risk premium is a component of cost of equity, not IRR." },
+                  { "text": "The company's cost of debt", "isCorrect": false, "explanation": "Cost of debt is a financing cost, not the investment's return." },
+                  { "text": "The risk-free rate", "isCorrect": false, "explanation": "Risk-free rate is a benchmark rate, not specific to this investment." }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Financial Statements",
+        "description": "Understanding the three core financial statements and their interconnections",
+        "order": 2,
+        "slug": "financial-statements",
+        "lessons": [
+          {
+            "title": "Balance Sheet Fundamentals",
+            "slug": "balance-sheet",
+            "order": 1,
+            "content": "# Balance Sheet Fundamentals\n\n## Core Concept\n\nThe Balance Sheet provides a **snapshot** of a company's financial position at a **specific point in time**.\n\n### The Accounting Equation\n```\nAssets = Liabilities + Equity\n```\n\nThis equation must ALWAYS balance!\n\n## Assets (Resources)\n\n### Current Assets\n- **Cash**: Most liquid asset\n- **Investments**: Short-term securities\n- **Accounts Receivable**: Money owed by customers\n- **Inventory**: Products for sale\n- **Prepaid Expenses**: Payments for future benefits\n\n### Non-Current Assets\n- **Net PP&E**: Property, Plant & Equipment minus depreciation\n- **Goodwill**: Premium paid in acquisitions\n- **Other Intangibles**: Patents, trademarks, etc.\n- **Deferred Tax Assets**: Future tax benefits\n\n## Liabilities (Obligations)\n\n### Current Liabilities\n- **Accounts Payable**: Money owed to suppliers\n- **Accrued Liabilities**: Expenses incurred but not paid\n- **Deferred Revenue**: Cash received for undelivered goods/services\n- **Short-term Debt**: Debt due within one year\n\n### Non-Current Liabilities\n- **Long-term Debt**: Debt due after one year\n- **Pension Liabilities**: Future pension obligations\n- **Lease Liabilities**: Long-term lease obligations\n\n## Equity (Ownership)\n\n- **Common Stock**: Par value of shares issued\n- **Additional Paid-In Capital**: Amount above par value\n- **Retained Earnings**: Cumulative profits not distributed\n- **Treasury Stock**: Shares repurchased (negative)\n\n## Key Working Capital Formula\n```\nEnding AR = Beginning AR + Non-Cash Revenue - Cash Collections\n```",
+            "questions": [
+              {
+                "text": "What does the Balance Sheet show?",
+                "type": "multiple_choice",
+                "difficulty": "easy",
+                "options": [
+                  { "text": "A snapshot of assets, liabilities and equity at a point in time", "isCorrect": true, "explanation": "Correct! The Balance Sheet shows the company's financial position at a specific moment." },
+                  { "text": "Revenue and expenses over a period", "isCorrect": false, "explanation": "This describes the Income Statement, not the Balance Sheet." },
+                  { "text": "Cash inflows and outflows", "isCorrect": false, "explanation": "This describes the Cash Flow Statement." },
+                  { "text": "Only the company's debt levels", "isCorrect": false, "explanation": "The Balance Sheet shows all assets, liabilities, and equity, not just debt." }
+                ]
+              },
+              {
+                "text": "Which of these is a current asset?",
+                "type": "multiple_choice",
+                "difficulty": "medium",
+                "options": [
+                  { "text": "Inventory", "isCorrect": true, "explanation": "Correct! Inventory is a current asset expected to be sold within one year." },
+                  { "text": "Goodwill", "isCorrect": false, "explanation": "Goodwill is a long-term intangible asset." },
+                  { "text": "Long-term debt", "isCorrect": false, "explanation": "This is a liability, not an asset." },
+                  { "text": "Net PP&E", "isCorrect": false, "explanation": "Property, Plant & Equipment is a non-current asset." }
+                ]
+              }
+            ]
+          },
+          {
+            "title": "Income Statement Analysis",
+            "slug": "income-statement",
+            "order": 2,
+            "content": "# Income Statement Analysis\n\n## Core Purpose\n\nShows a company's revenue, expenses, and taxes over a **PERIOD** (e.g., 1 year, 1 quarter, 1 month).\n\n## Key Principle: Accrual Accounting\n\nRecord revenue and expenses when **delivered or allocated**, not when cash changes hands.\n\n## Income Statement Structure\n\n### Revenue Section\n- **Revenue**: Total sales (cash and credit)\n- **Less: Returns and allowances**\n- **Net Revenue**: Starting point for profitability\n\n### Cost Structure\n\n#### Cost of Goods Sold (COGS)\n- Direct costs of producing goods/services\n- Includes materials, direct labour\n\n#### Operating Expenses\n- **SG&A**: Selling, General & Administrative\n- **R&D**: Research & Development\n- **D&A**: Depreciation & Amortisation\n\n### Other Items\n- **Interest Income/Expense**: Financing costs\n- **Gains/Losses**: One-time items\n- **Tax Provision**: Income taxes\n\n## Key Profitability Metrics\n\n### Gross Profit\n```\nGross Profit = Revenue - COGS\n```\nMeasures production efficiency\n\n### Operating Income (EBIT)\n```\nOperating Income = Gross Profit - Operating Expenses\n```\nCore business profitability\n\n### Net Income\n```\nNet Income = Operating Income +/- Other Items - Taxes\n```\nBottom line profit to shareholders\n\n## Common Adjustments\n\n### EBITDA\n```\nEBITDA = Operating Income + D&A\n```\nProxy for operating cash flow\n\n### Non-Recurring Items\n- Restructuring charges\n- Asset impairments\n- Legal settlements\n\nThese should be added back for normalised earnings",
+            "questions": [
+              {
+                "text": "What is Gross Profit?",
+                "type": "multiple_choice",
+                "difficulty": "easy",
+                "options": [
+                  { "text": "Revenue minus Cost of Goods Sold", "isCorrect": true, "explanation": "Correct! Gross Profit measures what's left after direct production costs." },
+                  { "text": "Revenue minus all expenses", "isCorrect": false, "explanation": "This would be Net Income, not Gross Profit." },
+                  { "text": "Revenue minus taxes", "isCorrect": false, "explanation": "Taxes come much later in the Income Statement." },
+                  { "text": "Total revenue", "isCorrect": false, "explanation": "Gross Profit is revenue after deducting COGS." }
+                ]
+              },
+              {
+                "text": "When should revenue be recorded under accrual accounting?",
+                "type": "multiple_choice",
+                "difficulty": "medium",
+                "options": [
+                  { "text": "When the product/service is delivered", "isCorrect": true, "explanation": "Correct! Accrual accounting records revenue upon delivery, regardless of payment timing." },
+                  { "text": "When cash is received", "isCorrect": false, "explanation": "This describes cash accounting, not accrual accounting." },
+                  { "text": "When the invoice is sent", "isCorrect": false, "explanation": "Invoicing alone doesn't trigger revenue recognition." },
+                  { "text": "At the end of the accounting period", "isCorrect": false, "explanation": "Revenue is recorded when earned (delivered), not at period end." }
+                ]
+              }
+            ]
+          },
+          {
+            "title": "Cash Flow Statement Mastery",
+            "slug": "cash-flow-statement",
+            "order": 3,
+            "content": "# Cash Flow Statement Mastery\n\n## Purpose\n\nShows a company's **actual cash** inflows and outflows over a period, reconciling net income to cash changes.\n\n## Three Sections\n\n### 1. Cash Flow from Operations (CFO)\n\nStarts with Net Income and adjusts for:\n\n#### Non-Cash Adjustments\n- **Add back**: Depreciation & Amortisation\n- **Add back**: Stock-based compensation\n- **Adjust**: Deferred taxes\n- **Adjust**: Gains/losses on asset sales\n\n#### Working Capital Changes\n\n**Key Rules:**\n- Asset ↑ → Cash Flow ↓\n- Asset ↓ → Cash Flow ↑\n- Liability ↑ → Cash Flow ↑\n- Liability ↓ → Cash Flow ↓\n\n**Examples:**\n- Accounts Receivable ↑ → Cash Flow ↓ (selling on credit)\n- Inventory ↓ → Cash Flow ↑ (selling existing stock)\n- Accounts Payable ↑ → Cash Flow ↑ (delaying payments)\n- Deferred Revenue ↑ → Cash Flow ↑ (cash before delivery)\n\n### 2. Cash Flow from Investing (CFI)\n\n#### Common Items\n- **CapEx**: Purchase of PP&E (negative)\n- **Asset sales**: Proceeds from selling assets (positive)\n- **Acquisitions**: Cash paid for companies (negative)\n- **Investments**: Purchase/sale of securities\n\n### 3. Cash Flow from Financing (CFF)\n\n#### Debt Activities\n- **Debt issuance**: Cash inflow\n- **Debt repayment**: Cash outflow\n- **Interest payments**: Sometimes here, sometimes CFO\n\n#### Equity Activities\n- **Share issuance**: Cash inflow\n- **Share repurchases**: Cash outflow\n- **Dividends**: Cash outflow\n\n## Free Cash Flow\n\n### Unlevered FCF (used in DCF)\n```\nUFCF = EBIT(1-Tax Rate) + D&A - ΔWorking Capital - CapEx\n```\n\n### Levered FCF (to equity)\n```\nLFCF = Net Income + D&A - ΔWorking Capital - CapEx + ΔDebt\n```\n\n## Key Relationships\n\n```\nBeginning Cash + CFO + CFI + CFF = Ending Cash\n```",
+            "questions": [
+              {
+                "text": "If Accounts Receivable increases by £100, what's the cash flow impact?",
+                "type": "multiple_choice",
+                "difficulty": "medium",
+                "options": [
+                  { "text": "Cash flow decreases by £100", "isCorrect": true, "explanation": "Correct! When AR increases, you've made sales on credit without collecting cash." },
+                  { "text": "Cash flow increases by £100", "isCorrect": false, "explanation": "AR increase means selling on credit, which reduces cash flow." },
+                  { "text": "No impact on cash flow", "isCorrect": false, "explanation": "Working capital changes directly impact operating cash flow." },
+                  { "text": "Depends on the industry", "isCorrect": false, "explanation": "The relationship is consistent: Asset up = Cash down." }
+                ]
+              },
+              {
+                "text": "Which item would appear in Cash Flow from Investing?",
+                "type": "multiple_choice",
+                "difficulty": "easy",
+                "options": [
+                  { "text": "Capital expenditures (CapEx)", "isCorrect": true, "explanation": "Correct! CapEx for PP&E purchases appears in CFI." },
+                  { "text": "Dividends paid", "isCorrect": false, "explanation": "Dividends appear in Cash Flow from Financing." },
+                  { "text": "Depreciation expense", "isCorrect": false, "explanation": "Depreciation is added back in Cash Flow from Operations." },
+                  { "text": "Interest expense", "isCorrect": false, "explanation": "Interest typically appears in CFO or CFF, not CFI." }
+                ]
+              }
+            ]
+          },
+          {
+            "title": "Three-Statement Integration",
+            "slug": "three-statement-integration",
+            "order": 4,
+            "content": "# Three-Statement Integration\n\n## The Universal Approach\n\nFor any accounting change, follow this three-step process:\n\n### Step 1: Income Statement Impact\n- Does revenue or any expense change?\n- Calculate the after-tax impact on Net Income\n- Remember: Tax Rate typically 20-30%\n\n### Step 2: Cash Flow Statement Impact\n- Start with Net Income change from Step 1\n- Add back non-cash expenses (D&A)\n- Adjust for working capital changes\n- Include any CFI or CFF items\n\n### Step 3: Balance Sheet Impact\n- Cash changes by net amount from CFS\n- Equity changes by Net Income amount\n- Adjust relevant asset/liability accounts\n- Verify Assets = Liabilities + Equity\n\n## Common Scenarios\n\n### Scenario 1: £100 Depreciation Expense\n\n**Income Statement:**\n- Operating Income: -£100\n- Tax Benefit: +£25 (at 25% rate)\n- Net Income: -£75\n\n**Cash Flow Statement:**\n- Net Income: -£75\n- Add back D&A: +£100\n- Net Cash Impact: +£25\n\n**Balance Sheet:**\n- Cash: +£25\n- Net PP&E: -£100\n- Retained Earnings: -£75\n- Balances! (Both sides -£75)\n\n### Scenario 2: £200 Inventory Purchase (Cash)\n\n**Income Statement:**\n- No immediate impact (not yet sold)\n\n**Cash Flow Statement:**\n- Inventory increase: -£200\n- Net Cash Impact: -£200\n\n**Balance Sheet:**\n- Cash: -£200\n- Inventory: +£200\n- Balances! (Assets net zero change)\n\n### Scenario 3: £500 Credit Sale (40% Margin)\n\n**Income Statement:**\n- Revenue: +£500\n- COGS: -£300\n- Operating Income: +£200\n- Net Income: +£150 (after 25% tax)\n\n**Cash Flow Statement:**\n- Net Income: +£150\n- AR increase: -£500\n- Inventory decrease: +£300\n- Net Cash Impact: -£50\n\n**Balance Sheet:**\n- Cash: -£50\n- AR: +£500\n- Inventory: -£300\n- Retained Earnings: +£150\n- Balances! (Both sides +£150)\n\n## Key Formulas to Remember\n\n### Working Capital Accounts\n```\nEnding AR = Beginning AR + Credit Sales - Cash Collections\nEnding Inventory = Beginning Inventory + Purchases - COGS\nEnding AP = Beginning AP + Purchases - Cash Payments\n```\n\n### Fixed Assets\n```\nEnding Net PP&E = Beginning Net PP&E + CapEx - Depreciation - Sales\n```\n\n### Equity\n```\nEnding Retained Earnings = Beginning RE + Net Income - Dividends\n```",
+            "questions": [
+              {
+                "text": "If depreciation expense is £100 and tax rate is 20%, what's the cash impact?",
+                "type": "multiple_choice",
+                "difficulty": "hard",
+                "options": [
+                  { "text": "+£20 (tax shield from depreciation)", "isCorrect": true, "explanation": "Correct! Depreciation reduces taxes by £20 (£100 × 20%), creating a positive cash flow." },
+                  { "text": "-£100 (the expense amount)", "isCorrect": false, "explanation": "Depreciation is non-cash; it actually creates a tax benefit." },
+                  { "text": "£0 (non-cash expense)", "isCorrect": false, "explanation": "While depreciation is non-cash, it creates a tax shield that impacts cash." },
+                  { "text": "-£80 (after-tax expense)", "isCorrect": false, "explanation": "The cash impact is positive due to tax savings, not negative." }
+                ]
+              },
+              {
+                "text": "A company makes a £1,000 credit sale. What happens to the Balance Sheet?",
+                "type": "multiple_choice",
+                "difficulty": "medium",
+                "options": [
+                  { "text": "AR up £1,000, Retained Earnings up by after-tax profit", "isCorrect": true, "explanation": "Correct! AR increases by the sale amount, while equity increases by the after-tax profit margin." },
+                  { "text": "Cash up £1,000, Revenue up £1,000", "isCorrect": false, "explanation": "Credit sale means no cash received yet; Revenue goes to Income Statement, not Balance Sheet." },
+                  { "text": "Only Accounts Receivable increases", "isCorrect": false, "explanation": "The profit from the sale also increases Retained Earnings." },
+                  { "text": "No change until cash is collected", "isCorrect": false, "explanation": "Accrual accounting records the sale immediately, affecting AR and equity." }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Valuation Methods",
+        "description": "Core valuation techniques including multiples, DCF, and comparable analysis",
+        "order": 3,
+        "slug": "valuation-methods",
+        "lessons": [
+          {
+            "title": "Enterprise Value vs Equity Value",
+            "slug": "ev-vs-equity-value",
+            "order": 1,
+            "content": "# Enterprise Value vs Equity Value\n\n## Core Definitions\n\n### Equity Value\n**The value of EVERYTHING a company has (Net Assets), but only to EQUITY INVESTORS**\n\n- Represents: Total Assets - Total Liabilities\n- Relevant to: Common shareholders only\n- Market measure: Share Price × Shares Outstanding\n\n### Enterprise Value\n**The value of the company's CORE BUSINESS OPERATIONS, but to ALL INVESTORS**\n\n- Represents: Operating Assets - Operating Liabilities\n- Relevant to: All investors (equity, debt, preferred)\n- Theoretical value of acquiring the business\n\n## The Bridge Formula\n\n```\nEnterprise Value = Equity Value - Cash + Debt + Preferred Stock + Minority Interest\n```\n\n### Why These Adjustments?\n\n**Subtract Cash:**\n- Cash is a non-operating asset\n- Reduces the effective purchase price\n- Acquirer keeps the cash\n\n**Add Debt:**\n- Debt holders have claims on the business\n- Must be repaid or assumed in acquisition\n- Part of the enterprise's capital structure\n\n**Add Preferred Stock:**\n- Hybrid security with debt-like features\n- Senior to common equity\n- Has fixed dividends\n\n**Add Minority Interest:**\n- Represents non-controlling stakes in subsidiaries\n- Part of consolidated enterprise value\n\n## Advanced Adjustments\n\n### Items to Subtract from EV:\n- **Investments**: Non-core assets\n- **Net Operating Losses (NOLs)**: Tax assets\n- **Excess cash**: Beyond operating needs\n\n### Items to Add to EV:\n- **Unfunded Pensions**: Debt-like obligations\n- **Operating Leases**: Sometimes treated as debt\n- **Environmental Liabilities**: Future obligations\n\n## Diluted Equity Value\n\n```\nDiluted Equity Value = Share Price × Diluted Shares\n```\n\n### Treasury Stock Method for Options\n```\nDiluted Shares from Options = # Options - (# Options × Exercise Price / Current Price)\n```\n\nOnly include **in-the-money** options!\n\n## Quick Decision Rules\n\n### Does Equity Value Change?\nAsk: Does Common Shareholders' Equity (CSE) change?\n- If yes → Equity Value changes by that amount\n- If no → No change to Equity Value\n\n### Does Enterprise Value Change?\nAsk: Do Net Operating Assets (NOA) change?\n- If yes → Enterprise Value changes by that amount\n- If no → No change to Enterprise Value\n\n## Common Scenarios\n\n### Company Issues £100 of Debt to Buy Equipment\n- **Equity Value**: No change (CSE unchanged)\n- **Enterprise Value**: No change (debt ↑ but so does PP&E)\n\n### Company Issues £100 of Stock for Cash\n- **Equity Value**: +£100 (CSE increases)\n- **Enterprise Value**: No change (EV already excludes cash)\n\n### Company Pays £50 Dividend\n- **Equity Value**: -£50 (reduces retained earnings)\n- **Enterprise Value**: -£50 (operating assets reduced)",
+            "questions": [
+              {
+                "text": "What does Enterprise Value represent?",
+                "type": "multiple_choice",
+                "difficulty": "medium",
+                "options": [
+                  { "text": "Value of core business operations to all investors", "isCorrect": true, "explanation": "Correct! EV represents the business value to all capital providers." },
+                  { "text": "Value to equity shareholders only", "isCorrect": false, "explanation": "This describes Equity Value, not Enterprise Value." },
+                  { "text": "Total market capitalisation", "isCorrect": false, "explanation": "Market cap is just equity value, not enterprise value." },
+                  { "text": "Book value of assets", "isCorrect": false, "explanation": "EV is a market-based valuation metric, not book value." }
+                ]
+              },
+              {
+                "text": "Why do we subtract cash when calculating Enterprise Value?",
+                "type": "multiple_choice",
+                "difficulty": "hard",
+                "options": [
+                  { "text": "Cash is non-operating and reduces effective purchase price", "isCorrect": true, "explanation": "Correct! Cash isn't part of operations and offsets the acquisition cost." },
+                  { "text": "Cash belongs to debt holders", "isCorrect": false, "explanation": "Cash belongs to the company and ultimately equity holders." },
+                  { "text": "Cash has no value", "isCorrect": false, "explanation": "Cash has value but isn't part of operating enterprise value." },
+                  { "text": "To make the calculation simpler", "isCorrect": false, "explanation": "The adjustment has a fundamental valuation purpose, not simplification." }
+                ]
+              }
+            ]
+          },
+          {
+            "title": "Valuation Multiples",
+            "slug": "valuation-multiples",
+            "order": 2,
+            "content": "# Valuation Multiples\n\n## Purpose of Multiples\n\nMultiples are like £/square foot for property - they **normalise** company values for comparison despite different sizes.\n\n## The Golden Rule\n\n**Match numerator and denominator scope:**\n- **Enterprise Value** in numerator → Use metric BEFORE interest\n- **Equity Value** in numerator → Use metric AFTER interest\n\n## Common Enterprise Value Multiples\n\n### EV/Revenue\n- **Use when**: Companies are unprofitable or have different margins\n- **Pros**: Always positive, widely applicable\n- **Cons**: Ignores profitability and efficiency\n- **Typical range**: 0.5x - 5x depending on industry\n\n### EV/EBITDA\n- **Use when**: Comparing companies with different capital structures\n- **Pros**: Normalises for capital structure and tax differences\n- **Cons**: Ignores CapEx requirements\n- **Typical range**: 5x - 15x for mature companies\n- **Calculation**: EV ÷ (Operating Income + D&A + Non-recurring items)\n\n### EV/EBIT\n- **Use when**: CapEx ≈ D&A (steady state)\n- **Pros**: Accounts for depreciation differences\n- **Cons**: Still affected by tax rates\n- **Typical range**: 8x - 20x\n\n## Common Equity Value Multiples\n\n### P/E Ratio (Price/Earnings)\n- **Use when**: Quick comparison within same industry\n- **Pros**: Simple and widely understood\n- **Cons**: Affected by capital structure and taxes\n- **Typical range**: 10x - 30x\n- **Calculation**: Equity Value ÷ Net Income\n\n### P/B Ratio (Price/Book)\n- **Use when**: Financial institutions, asset-heavy companies\n- **Pros**: Useful for companies with tangible assets\n- **Cons**: Ignores intangible value\n- **Typical range**: 0.5x - 3x\n\n## Industry-Specific Multiples\n\n### Technology\n- **EV/ARR**: For SaaS companies\n- **EV/Users**: For consumer platforms\n\n### Retail\n- **EV/Store**: For expansion analysis\n- **EV/Square Foot**: For property efficiency\n\n### Energy\n- **EV/Reserves**: For oil & gas\n- **EV/Production**: For current output\n\n## Selecting Comparable Companies\n\n### Screening Criteria\n1. **Industry**: Same or similar business model\n2. **Size**: Revenue within 0.5x - 2x range\n3. **Geography**: Similar markets/regulations\n4. **Growth**: Similar growth rates (±5%)\n5. **Margins**: Similar EBITDA margins (±10%)\n\n### Precedent Transactions\nAdd:\n- **Time**: Usually last 2-5 years\n- **Transaction size**: Similar deal values\n- **Transaction type**: Strategic vs Financial\n\n## Applying Multiples\n\n### Step-by-Step Process\n1. Calculate multiples for comparable set\n2. Determine appropriate range (usually 25th-75th percentile)\n3. Apply to subject company's metrics\n4. Calculate implied valuation range\n5. Sensitise for different assumptions\n\n### Example Calculation\n- Comparable companies trade at 10x-12x EBITDA\n- Your company's EBITDA: £100m\n- Implied EV range: £1,000m - £1,200m\n- Less: Net Debt of £200m\n- Implied Equity Value: £800m - £1,000m\n\n## Control Premiums\n\n**Trading Multiples**: Based on minority stakes\n**Transaction Multiples**: Include control premium (typically 20-40%)\n\nThis is why precedent transactions usually show higher multiples!",
+            "questions": [
+              {
+                "text": "When would you use EV/Revenue instead of EV/EBITDA?",
+                "type": "multiple_choice",
+                "difficulty": "medium",
+                "options": [
+                  { "text": "For unprofitable or high-growth companies", "isCorrect": true, "explanation": "Correct! EV/Revenue works when companies have no profits or widely varying margins." },
+                  { "text": "For mature, profitable companies", "isCorrect": false, "explanation": "Mature companies should use profit-based multiples like EV/EBITDA." },
+                  { "text": "Only for financial institutions", "isCorrect": false, "explanation": "Financial institutions typically use P/B ratios, not EV/Revenue." },
+                  { "text": "When comparing different industries", "isCorrect": false, "explanation": "Different industries have different revenue models; this makes comparison less meaningful." }
+                ]
+              },
+              {
+                "text": "Why use Enterprise Value for EBITDA multiples but Equity Value for P/E?",
+                "type": "multiple_choice",
+                "difficulty": "hard",
+                "options": [
+                  { "text": "EBITDA is before interest; Net Income is after interest", "isCorrect": true, "explanation": "Correct! Match the scope - EV for pre-interest metrics, Equity Value for post-interest." },
+                  { "text": "It's just market convention", "isCorrect": false, "explanation": "There's a fundamental reason based on what each metric represents." },
+                  { "text": "EBITDA is larger than Net Income", "isCorrect": false, "explanation": "The size difference isn't the reason for using different numerators." },
+                  { "text": "Enterprise Value is always preferred", "isCorrect": false, "explanation": "The choice depends on whether the metric includes interest expense." }
+                ]
+              }
+            ]
+          },
+          {
+            "title": "DCF Analysis - Unlevered",
+            "slug": "dcf-unlevered",
+            "order": 3,
+            "content": "# DCF Analysis - Unlevered\n\n## Conceptual Foundation\n\nA DCF values a company based on:\n- **Present Value** of cash flows over next 5-10 years (Explicit Period)\n- **Plus** Present Value of all cash flows thereafter (Terminal Value)\n\n## Unlevered Free Cash Flow (UFCF)\n\n### Standard Formula\n```\nUFCF = EBIT(1 - Tax Rate) + D&A - Change in NWC - CapEx\n```\n\n### Alternative Starting Points\n```\nUFCF = EBITDA(1 - Tax Rate) + Tax Rate × D&A - Change in NWC - CapEx\n```\n\n### What to ALWAYS Exclude\n- Interest expense/income\n- Debt principal changes\n- Dividends\n- Share issuances/repurchases\n\n### Advanced Adjustments\n- **Add**: Stock-based compensation (if material)\n- **Subtract**: Acquisitions (if recurring)\n- **Adjust**: Changes in deferred taxes\n- **Normalise**: One-time charges\n\n## Working Capital Calculations\n\n### Change in Net Working Capital\n```\nΔNWC = ΔCurrent Assets - ΔCurrent Liabilities\n```\nExclude cash and debt!\n\n### Common Items\n- **Accounts Receivable**: ↑ = cash outflow\n- **Inventory**: ↑ = cash outflow  \n- **Prepaid Expenses**: ↑ = cash outflow\n- **Accounts Payable**: ↑ = cash inflow\n- **Accrued Liabilities**: ↑ = cash inflow\n- **Deferred Revenue**: ↑ = cash inflow\n\n## Terminal Value Calculation\n\n### Method 1: Exit Multiple\n```\nTerminal Value = Final Year EBITDA × Exit Multiple\n```\n- Use multiples from comparable companies\n- Typically use forward EBITDA\n- Common range: 5x - 15x\n\n### Method 2: Gordon Growth Model\n```\nTerminal Value = Final Year FCF × (1 + g) / (WACC - g)\n```\n- Growth rate (g): 0% - 3% (≤ GDP growth)\n- Provides perpetuity value\n- Sensitive to assumptions\n\n## WACC Calculation\n\n### Formula\n```\nWACC = E/V × Cost of Equity + D/V × Cost of Debt × (1 - Tax Rate)\n```\n\n### Cost of Equity\n```\nCost of Equity = Risk-Free Rate + Beta × Market Risk Premium\n```\n\n**Components:**\n- **Risk-Free Rate**: 10-year government bond\n- **Beta**: Levered beta reflecting business risk\n- **Market Risk Premium**: Typically 5-7%\n\n### Beta Calculations\n\n**Unlevering Beta:**\n```\nUnlevered β = Levered β / [1 + (1-Tax)×(Debt/Equity)]\n```\n\n**Relevering Beta:**\n```\nRelevered β = Unlevered β × [1 + (1-Tax)×(Target D/E)]\n```\n\n### Cost of Debt\n- Use yield to maturity on existing debt\n- Or: Risk-Free Rate + Credit Spread\n- Remember tax shield: multiply by (1 - Tax Rate)\n\n## DCF Build Steps\n\n### Step 1: Project Free Cash Flows\n1. Forecast revenue growth\n2. Apply operating margins\n3. Calculate EBIT\n4. Apply taxes\n5. Add back D&A\n6. Subtract NWC change\n7. Subtract CapEx\n\n### Step 2: Calculate Terminal Value\n- Choose exit multiple or growth rate\n- Apply to final year metrics\n\n### Step 3: Discount to Present Value\n```\nPV = FCF / (1 + WACC)^year\n```\n\n### Step 4: Sum Components\n```\nEnterprise Value = Σ(PV of FCFs) + PV of Terminal Value\n```\n\n### Step 5: Bridge to Equity Value\n```\nEquity Value = Enterprise Value + Cash - Debt - Preferred - Minority Interest\n```\n\n## Sensitivity Analysis\n\nAlways test sensitivity to:\n- WACC (±1%)\n- Terminal Growth Rate (±0.5%)\n- Exit Multiple (±1x)\n- Revenue Growth (±2%)\n- EBITDA Margins (±2%)",
+            "questions": [
+              {
+                "text": "What should be EXCLUDED from Unlevered Free Cash Flow?",
+                "type": "multiple_choice",
+                "difficulty": "medium",
+                "options": [
+                  { "text": "Interest expense and debt repayments", "isCorrect": true, "explanation": "Correct! UFCF excludes all financing items to show operating cash generation." },
+                  { "text": "Depreciation and amortisation", "isCorrect": false, "explanation": "D&A is added back to UFCF as it's a non-cash expense." },
+                  { "text": "Capital expenditures", "isCorrect": false, "explanation": "CapEx is subtracted in UFCF as it's a real cash outflow." },
+                  { "text": "Working capital changes", "isCorrect": false, "explanation": "Working capital changes are included in UFCF calculation." }
+                ]
+              },
+              {
+                "text": "In WACC, why do we multiply cost of debt by (1 - Tax Rate)?",
+                "type": "multiple_choice",
+                "difficulty": "hard",
+                "options": [
+                  { "text": "Interest expense is tax deductible, creating a tax shield", "isCorrect": true, "explanation": "Correct! The tax deductibility of interest reduces the effective cost of debt." },
+                  { "text": "Debt is less risky than equity", "isCorrect": false, "explanation": "While true, this doesn't explain the tax adjustment." },
+                  { "text": "To match the cost of equity calculation", "isCorrect": false, "explanation": "Cost of equity doesn't have a tax adjustment." },
+                  { "text": "Companies don't pay full interest", "isCorrect": false, "explanation": "Companies pay full interest; the tax benefit comes from deductibility." }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "title": "M&A and Merger Models",
+        "description": "Understanding merger models, accretion/dilution, and synergies",
+        "order": 4,
+        "slug": "ma-merger-models",
+        "lessons": [
+          {
+            "title": "M&A Fundamentals",
+            "slug": "ma-fundamentals",
+            "order": 1,
+            "content": "# M&A Fundamentals\n\n## Types of Buyers\n\n### Strategic Buyers\n- **Who**: Companies in same/related industry\n- **Why**: Synergies, market share, capabilities\n- **Valuation**: Can pay higher due to synergies\n- **Financing**: Cash, stock, or combination\n\n### Financial Buyers (PE Firms)\n- **Who**: Private equity funds\n- **Why**: Financial returns (IRR targets)\n- **Valuation**: Limited by return requirements\n- **Financing**: Mostly debt (60-80%), some equity\n\n## Purchase Price Determination\n\n### Public Company Targets\n```\nPurchase Price = Current Price × (1 + Premium %)\n```\n- Typical premiums: 20-40%\n- Based on unaffected share price\n- May use 30-day VWAP\n\n### Private Company Targets\n- Based on valuation multiples\n- Common: EV/EBITDA from comparables\n- Adjusted for company-specific factors\n\n## Purchase Consideration Mix\n\n### Why Use Cash?\n✓ No dilution to ownership\n✓ Certain value for sellers\n✓ Faster execution\n✗ Limited by available cash\n✗ Foregone interest income\n\n### Why Use Stock?\n✓ Preserves cash\n✓ Shares risk with sellers\n✓ Can use overvalued stock\n✗ Dilutes existing shareholders\n✗ Uncertain value for sellers\n\n### Why Use Debt?\n✓ Tax-deductible interest\n✓ Lower cost than equity\n✓ No dilution\n✗ Increases financial risk\n✗ Requires debt capacity\n\n## Sources & Uses Schedule\n\n### Sources (Where Money Comes From)\n- Cash from balance sheet\n- New debt issuance\n- Stock issued to sellers\n- Seller rollover equity\n\n### Uses (Where Money Goes)\n- Purchase equity value\n- Refinanced target debt\n- Transaction fees (2-5%)\n- Financing fees\n\n**Rule**: Total Sources = Total Uses\n\n## Purchase Price Allocation\n\n### Step 1: Calculate Purchase Equity Value\n```\nPurchase Equity = Shares × Offer Price\n```\n\n### Step 2: Calculate Purchase Enterprise Value\n```\nPurchase EV = Purchase Equity + Target Debt - Target Cash\n```\n\n### Step 3: Allocate to Assets\n1. Write up tangible assets to fair value\n2. Write up identifiable intangibles\n3. Record deferred tax liability on write-ups\n4. **Remainder = Goodwill**\n\n### Goodwill Calculation\n```\nGoodwill = Purchase Price - Fair Value of Net Assets\n```\n\n## Types of Synergies\n\n### Revenue Synergies\n- **Cross-selling**: Sell products to each other's customers\n- **Geographic expansion**: Enter new markets\n- **Product enhancement**: Combined offerings\n- **Pricing power**: Reduced competition\n\n**Typical realisation**: 3-5 years\n**Probability**: Lower (50-70%)\n\n### Cost Synergies\n- **Overhead reduction**: Eliminate duplicate functions\n- **Economies of scale**: Better supplier terms\n- **Facility consolidation**: Close redundant locations\n- **Technology integration**: Single platform\n\n**Typical realisation**: 1-2 years\n**Probability**: Higher (70-90%)\n\n## Deal Structure Considerations\n\n### Asset Purchase\n**Buyer perspective:**\n✓ Choose specific assets/liabilities\n✓ Step-up basis for tax\n✓ Avoid hidden liabilities\n✗ Complex transfers\n✗ May lose tax attributes\n\n### Stock Purchase\n**Buyer perspective:**\n✓ Simple transfer\n✓ Keep contracts/licenses\n✓ Preserve tax attributes\n✗ Inherit all liabilities\n✗ No step-up in basis\n\n## Regulatory Considerations\n\n### Competition/Antitrust\n- Market concentration (HHI index)\n- Market share thresholds\n- Vertical integration concerns\n\n### Other Approvals\n- Shareholder votes (usually >50%)\n- Foreign investment (CFIUS in US)\n- Industry-specific (banking, telecom)",
+            "questions": [
+              {
+                "text": "Why might a strategic buyer pay more than a financial buyer?",
+                "type": "multiple_choice",
+                "difficulty": "medium",
+                "options": [
+                  { "text": "Strategic buyers can realise operational synergies", "isCorrect": true, "explanation": "Correct! Synergies allow strategic buyers to create additional value, justifying higher prices." },
+                  { "text": "Financial buyers have less money", "isCorrect": false, "explanation": "PE firms often have substantial capital; it's about return requirements." },
+                  { "text": "Strategic buyers don't care about returns", "isCorrect": false, "explanation": "All buyers care about returns, but strategic buyers have additional value levers." },
+                  { "text": "Regulations favour strategic buyers", "isCorrect": false, "explanation": "Regulations often scrutinise strategic deals more closely due to competition concerns." }
+                ]
+              },
+              {
+                "text": "What is Goodwill in an acquisition?",
+                "type": "multiple_choice",
+                "difficulty": "easy",
+                "options": [
+                  { "text": "Purchase price minus fair value of net assets acquired", "isCorrect": true, "explanation": "Correct! Goodwill is the premium paid above the fair value of identifiable assets." },
+                  { "text": "The target's brand value", "isCorrect": false, "explanation": "Brand value would be an identifiable intangible asset, not goodwill." },
+                  { "text": "Future synergies expected", "isCorrect": false, "explanation": "Synergies may justify the price but aren't directly recorded as goodwill." },
+                  { "text": "Cash paid to management", "isCorrect": false, "explanation": "Management payments are separate compensation, not goodwill." }
+                ]
+              }
+            ]
+          },
+          {
+            "title": "Accretion/Dilution Analysis",
+            "slug": "accretion-dilution",
+            "order": 2,
+            "content": "# Accretion/Dilution Analysis\n\n## Core Concept\n\n**Accretion**: Deal increases Buyer's EPS\n**Dilution**: Deal decreases Buyer's EPS\n\n```\nAccretion/Dilution % = (Pro Forma EPS / Standalone EPS) - 1\n```\n\n## Quick Rules of Thumb\n\n### 100% Stock Deals\n- **Accretive if**: Buyer's P/E > Seller's effective P/E\n- **Dilutive if**: Buyer's P/E < Seller's effective P/E\n- **Neutral if**: P/E ratios are equal\n\n### 100% Cash Deals\n- **Accretive if**: Seller's earnings yield > After-tax cost of cash\n- **Dilutive if**: Seller's earnings yield < After-tax cost of cash\n\n### 100% Debt Deals\n- **Accretive if**: Seller's earnings yield > After-tax cost of debt\n- **Often accretive** due to low cost of debt\n\n## Detailed Calculation Framework\n\n### Step 1: Calculate Seller's Contribution\n```\nSeller's Net Income Contribution = Seller's Net Income + Synergies - Integration Costs\n```\n\n### Step 2: Calculate Financing Costs\n\n**Cash Component:**\n```\nForgone Interest = Cash Used × Interest Rate × (1 - Tax Rate)\n```\n\n**Debt Component:**\n```\nInterest Expense = Debt Raised × Interest Rate × (1 - Tax Rate)\n```\n\n**Stock Component:**\n```\nShares Issued = Purchase Equity Value / Buyer's Share Price\n```\n\n### Step 3: Calculate Pro Forma Metrics\n\n```\nPro Forma Net Income = Buyer NI + Seller NI + Synergies - Financing Costs\n```\n\n```\nPro Forma Shares = Buyer Shares + New Shares Issued\n```\n\n```\nPro Forma EPS = Pro Forma Net Income / Pro Forma Shares\n```\n\n## Advanced Adjustments\n\n### Purchase Accounting Adjustments\n\n**Intangible Amortisation:**\n```\nNew Amortisation = Identified Intangibles / Useful Life\nAfter-tax Impact = Amortisation × (1 - Tax Rate)\n```\n\n**Depreciation Step-Up:**\n```\nIncremental D&A = PP&E Write-up / Useful Life\nAfter-tax Impact = Incremental D&A × (1 - Tax Rate)\n```\n\n**Deferred Revenue Haircut:**\n- Reduces target's revenue temporarily\n- Typically 10-25% reduction for 1-2 quarters\n\n### Synergy Phasing\n\n**Year 1**: 25-40% realised\n**Year 2**: 60-75% realised  \n**Year 3**: 90-100% realised\n\n**One-time costs**: 1-2x annual synergies\n\n## Weighted Average Cost of Acquisition\n\n### Framework\n```\nWeighted Cost = %Cash × Cost of Cash + %Debt × Cost of Debt + %Stock × Cost of Stock\n```\n\n### Cost Components\n\n**Cost of Cash:**\n```\n= Interest Rate on Cash × (1 - Tax Rate)\n```\nTypically 1-3% after-tax\n\n**Cost of Debt:**\n```\n= Interest Rate on Debt × (1 - Tax Rate)\n```\nTypically 3-5% after-tax\n\n**Cost of Stock:**\n```\n= Buyer's Net Income / Buyer's Equity Value\n= 1 / (Buyer's P/E Ratio)\n```\nTypically 5-10%\n\n### Decision Rule\n```\nAccretive if: Seller's Yield > Weighted Cost\nDilutive if: Seller's Yield < Weighted Cost\n```\n\nWhere Seller's Yield = Seller's Net Income / Purchase Equity Value\n\n## Sensitivity Analysis\n\nKey variables to test:\n\n1. **Purchase Premium**: ±5-10%\n2. **Synergy Realisation**: 50-150% of base\n3. **Interest Rates**: ±100bps\n4. **Stock Price**: ±10-20%\n5. **Integration Costs**: 0.5x-2x of synergies\n\n## Making Dilutive Deals Work\n\n### Improve Economics\n- Negotiate lower price\n- Increase cash/debt mix\n- Accelerate synergies\n- Reduce integration costs\n\n### Accept Near-term Dilution If:\n- Strong revenue synergies expected\n- Strategic positioning critical\n- Accretive by Year 2-3\n- Creates long-term value\n\n## Common Pitfalls\n\n1. **Overestimating synergies**: Use conservative estimates\n2. **Ignoring integration costs**: Can be 1-2x synergies\n3. **Missing accounting adjustments**: D&A can be material\n4. **Wrong tax rate**: Use buyer's marginal rate\n5. **Forgetting dilution from options**: Use treasury method",
+            "questions": [
+              {
+                "text": "In a 100% stock deal, what determines accretion/dilution?",
+                "type": "multiple_choice",
+                "difficulty": "medium",
+                "options": [
+                  { "text": "Comparison of buyer and seller P/E ratios", "isCorrect": true, "explanation": "Correct! If buyer's P/E > seller's P/E, the deal is accretive." },
+                  { "text": "The premium paid", "isCorrect": false, "explanation": "Premium affects the effective P/E but isn't the sole determinant." },
+                  { "text": "Synergy amounts", "isCorrect": false, "explanation": "Synergies help but the P/E comparison drives the initial math." },
+                  { "text": "Market conditions", "isCorrect": false, "explanation": "Market conditions affect valuations but don't directly determine accretion/dilution." }
+                ]
+              },
+              {
+                "text": "Why is cost of stock calculated as 1/P/E ratio?",
+                "type": "multiple_choice",
+                "difficulty": "hard",
+                "options": [
+                  { "text": "It represents the earnings yield to equity holders", "isCorrect": true, "explanation": "Correct! E/P (inverse of P/E) shows the return to shareholders via earnings." },
+                  { "text": "Stock has no real cost", "isCorrect": false, "explanation": "Stock has an opportunity cost - the dilution to existing shareholders." },
+                  { "text": "It matches the dividend yield", "isCorrect": false, "explanation": "Earnings yield and dividend yield are different metrics." },
+                  { "text": "It's a regulatory requirement", "isCorrect": false, "explanation": "This is a financial analysis concept, not regulatory." }
+                ]
+              }
+            ]
+          },
+          {
+            "title": "Merger Model Mechanics",
+            "slug": "merger-model-mechanics",
+            "order": 3,
+            "content": "# Merger Model Mechanics\n\n## Model Architecture Overview\n\n### Key Sections\n1. Transaction assumptions\n2. Sources & uses\n3. Purchase price allocation  \n4. Pro forma adjustments\n5. Combined income statement\n6. Accretion/dilution analysis\n7. Pro forma balance sheet\n8. Credit statistics\n\n## Step-by-Step Build Process\n\n### Step 1: Transaction Assumptions\n\n**Inputs needed:**\n```excel\nOffer Price per Share: £50\nTarget Shares Outstanding: 100m\nPremium: 30%\nCash %: 50%\nStock %: 50%\nDebt %: 0%\n```\n\n**Calculate purchase values:**\n```excel\nPurchase Equity Value = Shares × Offer Price\nPurchase Enterprise Value = Equity Value + Net Debt\n```\n\n### Step 2: Sources & Uses\n\n**Sources:**\n```excel\nCash from Balance Sheet: £500m\nNew Debt Issued: £300m  \nStock Issued: £700m\nTotal Sources: £1,500m\n```\n\n**Uses:**\n```excel\nPurchase Equity Value: £1,200m\nRefinanced Debt: £200m\nTransaction Fees: £60m\nFinancing Fees: £40m\nTotal Uses: £1,500m\n```\n\n### Step 3: Purchase Price Allocation\n\n```excel\nPurchase Price: £1,200m\nLess: Book Value of Equity: (£400m)\nExcess Purchase Price: £800m\n\nAllocated to:\n- Inventory Write-up: £50m\n- PP&E Write-up: £150m  \n- Intangibles: £200m\n- Goodwill: £400m\n```\n\n**Create D&A schedule:**\n```excel\nPP&E Write-up Amortisation = £150m / 10 years = £15m/year\nIntangibles Amortisation = £200m / 5 years = £40m/year\n```\n\n### Step 4: Financing Schedule\n\n**Shares calculation:**\n```excel\nBuyer Shares Outstanding: 200m\nStock Consideration: £700m\nBuyer Share Price: £35\nNew Shares Issued = £700m / £35 = 20m\nPro Forma Shares = 200m + 20m = 220m\n```\n\n**Interest calculation:**\n```excel\nCash Used: £500m\nInterest Rate on Cash: 2%\nForgone Interest = £500m × 2% × (1-25%) = £7.5m\n\nNew Debt: £300m\nInterest Rate: 5%\nNew Interest = £300m × 5% × (1-25%) = £11.25m\n```\n\n### Step 5: Combined P&L\n\n```excel\n                    Buyer    Target   Adjust   Combined\nRevenue             2,000     800      -        2,800\nCOGS               (1,200)   (480)    (5)      (1,685)\nGross Profit         800      320     (5)       1,115\nOpEx                (400)    (160)     -        (560)\nD&A                  (80)     (40)   (55)       (175)\nEBIT                 320      120    (60)        380\nInterest             (40)     (20)   (19)        (79)\nEBT                  280      100    (79)        301\nTaxes (25%)          (70)     (25)    20         (75)\nNet Income           210       75    (59)        226\n\nEPS:\nStandalone: £210m / 200m = £1.05\nPro Forma: £226m / 220m = £1.03\nDilution: (2.2%)\n```\n\n### Step 6: Synergy Integration\n\n**Revenue synergies:**\n```excel\nCross-selling opportunity: £50m\nPhasing: 20% Year 1, 50% Year 2, 100% Year 3\nYear 1 Impact: £10m revenue × 40% margin = £4m EBITDA\n```\n\n**Cost synergies:**\n```excel\nHeadcount reduction: £30m\nProcurement savings: £20m\nPhasing: 40% Year 1, 80% Year 2, 100% Year 3\nYear 1 Impact: £50m × 40% = £20m\n```\n\n**Integration costs:**\n```excel\nSeverance: £25m\nConsultants: £15m\nSystems integration: £10m\nTotal: £50m (one-time)\n```\n\n### Step 7: Pro Forma Balance Sheet\n\n```excel\nCombined Balance Sheet:\n\nAssets:\nCash: Buyer + Target - Cash Consideration\nAR: Buyer + Target\nInventory: Buyer + Target + Write-up\nPP&E: Buyer + Target + Write-up\nIntangibles: Buyer + Target + New Identified\nGoodwill: Buyer + New Created\n\nLiabilities:\nAP: Buyer + Target\nDebt: Buyer + Target + New Debt - Refinanced\n\nEquity:\nCommon Stock: Buyer + Stock Issued\nRetained Earnings: Buyer + Target (eliminated)\n```\n\n## Key Model Checks\n\n### Balance Sheet Balances\n```excel\nAssets = Liabilities + Equity ✓\n```\n\n### Sources = Uses\n```excel\nTotal Sources = Total Uses ✓\n```\n\n### Share Count Reconciliation\n```excel\nBeginning + Issued = Ending ✓\n```\n\n## Sensitivity Tables\n\n### Create 2D sensitivity:\n- X-axis: Premium (20%-40%)\n- Y-axis: Synergies (£0-100m)\n- Output: EPS accretion/dilution\n\n## Model Best Practices\n\n1. **Colour coding**:\n   - Blue = Inputs\n   - Black = Formulas\n   - Green = Links\n\n2. **Clear sections** with headers\n\n3. **Scenario toggles** for different structures\n\n4. **Checks and balances** throughout\n\n5. **Executive summary** page upfront",
+            "questions": [
+              {
+                "text": "In purchase price allocation, what's created when purchase price exceeds fair value?",
+                "type": "multiple_choice",
+                "difficulty": "easy",
+                "options": [
+                  { "text": "Goodwill", "isCorrect": true, "explanation": "Correct! Goodwill represents the excess of purchase price over fair value of net assets." },
+                  { "text": "Deferred revenue", "isCorrect": false, "explanation": "Deferred revenue is a liability for undelivered services, not related to purchase price." },
+                  { "text": "Additional debt", "isCorrect": false, "explanation": "The excess creates an asset (goodwill), not a liability." },
+                  { "text": "Tax assets", "isCorrect": false, "explanation": "Purchase accounting typically creates tax liabilities, not assets." }
+                ]
+              },
+              {
+                "text": "Why do we add back non-cash D&A from purchase accounting to calculate cash EPS?",
+                "type": "multiple_choice",
+                "difficulty": "hard",
+                "options": [
+                  { "text": "These are accounting allocations with no cash impact", "isCorrect": true, "explanation": "Correct! Purchase accounting D&A is purely an accounting entry with no cash flow effect." },
+                  { "text": "To make the deal look better", "isCorrect": false, "explanation": "Cash EPS is a legitimate metric showing cash generation, not manipulation." },
+                  { "text": "Tax regulations require it", "isCorrect": false, "explanation": "This is an analytical choice, not a regulatory requirement." },
+                  { "text": "Synergies offset the expense", "isCorrect": false, "explanation": "Synergies are separate from purchase accounting adjustments." }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Leveraged Buyouts (LBO)",
+        "description": "Private equity transactions, LBO modelling, and returns analysis",
+        "order": 5,
+        "slug": "leveraged-buyouts",
+        "lessons": [
+          {
+            "title": "LBO Fundamentals",
+            "slug": "lbo-fundamentals",
+            "order": 1,
+            "content": "# LBO Fundamentals\n\n## What is an LBO?\n\nA leveraged buyout is the acquisition of a company using significant borrowed funds, with the target's cash flows used to repay debt.\n\n### Key Characteristics\n- **High leverage**: 60-80% debt financing\n- **PE ownership**: Financial sponsor takes control\n- **3-7 year hold**: Typical investment horizon\n- **20%+ IRR target**: Return requirement\n\n## The LBO Value Creation Framework\n\n### Three Sources of Returns\n\n1. **Multiple Expansion**\n```\nBuy at 8x EBITDA → Sell at 10x EBITDA\n25% value increase from multiple alone\n```\n\n2. **EBITDA Growth**\n```\nYear 1 EBITDA: £100m → Year 5: £150m\n50% increase in enterprise value at same multiple\n```\n\n3. **Debt Paydown**\n```\nInitial Debt: £600m → Exit Debt: £300m\n£300m additional equity value created\n```\n\n## Ideal LBO Candidates\n\n### Business Characteristics\n\n**Strong Cash Flow Generation**\n- Stable, predictable cash flows\n- High FCF conversion (>40% EBITDA to FCF)\n- Limited working capital needs\n- Low maintenance CapEx (<2% revenue)\n\n**Defensive Market Position**\n- Leading market share\n- High barriers to entry\n- Low customer concentration\n- Recession-resistant demand\n\n**Growth Opportunities**\n- Organic growth potential\n- Add-on acquisition opportunities\n- Cost reduction possibilities\n- Operational improvements available\n\n**Asset Base**\n- Tangible assets for collateral\n- Separable non-core assets\n- Real estate ownership\n- Strong working capital management\n\n### Management Factors\n- Strong, experienced team\n- Aligned incentives (equity participation)\n- Track record of execution\n- Willingness to partner with PE\n\n## LBO Capital Structure\n\n### Typical Structure\n\n```\nSources:                    %\n- Senior Debt              40-50%\n- Subordinated Debt        10-20%\n- Preferred/Mezzanine      0-10%\n- Sponsor Equity           25-35%\n- Management Rollover      0-5%\n```\n\n### Types of Debt\n\n**Revolving Credit Facility**\n- Purpose: Working capital, short-term needs\n- Pricing: LIBOR + 200-300bps\n- Terms: 5 years, no amortisation\n- Priority: Super senior\n\n**Term Loan A**\n- Purpose: Acquisition funding\n- Pricing: LIBOR + 250-350bps\n- Terms: 5-6 years, amortises\n- Priority: Senior secured\n\n**Term Loan B/C**\n- Purpose: Additional leverage\n- Pricing: LIBOR + 350-500bps\n- Terms: 7-8 years, bullet repayment\n- Priority: Senior secured\n\n**High-Yield Bonds**\n- Purpose: Fixed-rate financing\n- Pricing: 7-12% fixed\n- Terms: 8-10 years, bullet\n- Priority: Unsecured\n\n**Mezzanine/Preferred**\n- Purpose: Bridge equity gap\n- Pricing: 12-15% cash/PIK\n- Terms: 8-10 years\n- Priority: Subordinated\n\n## Debt Capacity Analysis\n\n### Key Credit Metrics\n\n**Total Debt / EBITDA**\n- Target: 4x - 6x\n- Maximum: 7x for strong businesses\n\n**Senior Debt / EBITDA**\n- Target: 3x - 4x\n- Bank comfort level\n\n**EBITDA / Interest**\n- Minimum: 2.5x - 3.0x\n- Interest coverage requirement\n\n**FCF / Debt Service**\n- Minimum: 1.2x - 1.4x\n- Debt service coverage ratio\n\n### Lender Considerations\n- Business stability/cyclicality\n- Asset coverage\n- Industry dynamics\n- Sponsor track record\n- Management quality\n\n## Returns Mathematics\n\n### IRR Quick Calculations\n\n**Money Multiple Method:**\n- 2x in 3 years ≈ 25% IRR\n- 2x in 5 years ≈ 15% IRR\n- 3x in 3 years ≈ 45% IRR\n- 3x in 5 years ≈ 25% IRR\n\n### Rule of 72\n```\nYears to Double = 72 / IRR%\nExample: 24% IRR doubles money in 3 years\n```\n\n## Exit Strategies\n\n### Strategic Sale\n- **Pros**: Highest price (synergies), certain exit\n- **Cons**: Limited buyer universe, regulatory risk\n- **Typical multiple**: 1-2x premium to purchase\n\n### Secondary Buyout\n- **Pros**: Quick execution, PE buyers understand\n- **Cons**: No synergy premium, market dependent\n- **Typical multiple**: Similar to or above entry\n\n### IPO\n- **Pros**: Potential highest valuation, partial liquidity\n- **Cons**: Market dependent, ongoing ownership\n- **Typical multiple**: Public market multiples\n\n### Recapitalisation\n- **Pros**: Return capital, maintain ownership\n- **Cons**: No full exit, adds leverage\n- **Returns**: Dividend to sponsors\n\n## Value Creation Levers\n\n### Operational Improvements\n- Revenue growth initiatives\n- Margin expansion programmes\n- Working capital optimisation\n- Cost reduction/efficiency\n\n### Strategic Initiatives\n- Add-on acquisitions\n- New market entry\n- Product development\n- Digital transformation\n\n### Financial Engineering\n- Optimal capital structure\n- Dividend recaps\n- Asset sales\n- Tax optimisation",
+            "questions": [
+              {
+                "text": "What are the three main sources of returns in an LBO?",
+                "type": "multiple_choice",
+                "difficulty": "medium",
+                "options": [
+                  { "text": "Multiple expansion, EBITDA growth, and debt paydown", "isCorrect": true, "explanation": "Correct! These are the three fundamental drivers of LBO returns." },
+                  { "text": "Revenue growth, cost cutting, and dividends", "isCorrect": false, "explanation": "These are operational improvements, not the three main return sources." },
+                  { "text": "Leverage, synergies, and management fees", "isCorrect": false, "explanation": "Leverage enables returns but isn't a source; PE firms earn fees but that's not investor returns." },
+                  { "text": "Entry price, exit price, and hold period", "isCorrect": false, "explanation": "These are components of return calculation, not sources of value creation." }
+                ]
+              },
+              {
+                "text": "Why do PE firms use high leverage in LBOs?",
+                "type": "multiple_choice",
+                "difficulty": "hard",
+                "options": [
+                  { "text": "To amplify equity returns through a smaller equity base", "isCorrect": true, "explanation": "Correct! Leverage reduces equity needed, magnifying returns on the equity invested." },
+                  { "text": "Because they don't have enough equity capital", "isCorrect": false, "explanation": "PE firms have substantial capital; leverage is a return strategy, not necessity." },
+                  { "text": "To reduce the purchase price", "isCorrect": false, "explanation": "Leverage doesn't reduce price; it changes the funding mix." },
+                  { "text": "Banks require it for all acquisitions", "isCorrect": false, "explanation": "Leverage is the PE firm's choice to enhance returns, not a requirement." }
+                ]
+              }
+            ]
+          },
+          {
+            "title": "LBO Model Building",
+            "slug": "lbo-model-building",
+            "order": 2,
+            "content": "# LBO Model Building\n\n## Model Architecture\n\n### Key Sections\n1. Transaction assumptions\n2. Sources & uses\n3. Income statement projections\n4. Cash flow build\n5. Debt schedule\n6. Returns analysis\n7. Sensitivity analysis\n\n## Step-by-Step Build Process\n\n### Step 1: Entry Assumptions\n\n```excel\nPurchase Multiple: 10.0x LTM EBITDA\nLTM EBITDA: £100m\nEnterprise Value: £1,000m\n\nNet Debt: £50m\nPurchase Equity Value: £950m\n\nDebt/EBITDA: 6.0x\nTotal Debt Raised: £600m\nSponsor Equity: £400m\n```\n\n### Step 2: Sources & Uses\n\n```excel\nSOURCES:\nRevolving Credit: £0m\nTerm Loan B: £400m\nSenior Notes: £200m\nSponsor Equity: £400m\nTotal Sources: £1,000m\n\nUSES:\nPurchase Enterprise Value: £1,000m\nRefinance Existing Debt: £50m\nTransaction Fees: £30m\nFinancing Fees: £20m\nTotal Uses: £1,100m\n\nRevolver Draw: £100m (to balance)\n```\n\n### Step 3: Operating Model\n\n**Revenue Build:**\n```excel\nYear 0: £500m\nGrowth Rate: 5% annually\nYear 5: £638m\n```\n\n**EBITDA Build:**\n```excel\nEBITDA Margin:\nYear 0: 20%\nMargin Expansion: 50bps/year\nYear 5: 22.5%\n\nEBITDA:\nYear 0: £100m\nYear 5: £144m\n```\n\n**Working Capital:**\n```excel\nNWC as % Revenue: 10%\nΔNWC = 10% × ΔRevenue\n```\n\n**CapEx:**\n```excel\nCapEx as % Revenue: 2.5%\nAnnual CapEx = 2.5% × Revenue\n```\n\n### Step 4: Free Cash Flow\n\n```excel\nEBITDA\n- Cash Interest\n- Cash Taxes\n- ΔWorking Capital\n- CapEx\n= Cash Available for Debt Repayment\n```\n\n**Detailed Year 1 Example:**\n```excel\nEBITDA: £105m\nCash Interest: (£42m)  [7% blended rate]\nCash Taxes: (£8m)      [on EBIT-Interest]\nΔNWC: (£3m)            [revenue growth]\nCapEx: (£13m)          [2.5% of revenue]\nCash Available: £39m\n```\n\n### Step 5: Debt Schedule\n\n**Mandatory Amortisation:**\n```excel\nTerm Loan A: 5% annually = £20m/year\nTerm Loan B: 1% annually = £4m/year\n```\n\n**Cash Flow Sweep:**\n```excel\nCash Available: £39m\nLess: Mandatory Amort: (£24m)\nExcess Cash: £15m\n→ Apply to Revolver, then Term Loans\n```\n\n**Debt Waterfall:**\n```excel\n         Begin   Repay   End    Interest\nRevolver  100     (15)    85     5.0%\nTL-A      400     (20)   380     6.0%\nTL-B      200      (4)   196     7.0%\nNotes     200      -     200     8.0%\nTotal     900     (39)   861\n```\n\n### Step 6: Exit Valuation\n\n```excel\nYear 5 EBITDA: £144m\nExit Multiple: 10.0x\nExit Enterprise Value: £1,440m\n\nLess: Year 5 Net Debt: (£450m)\nExit Equity Value: £990m\n\nSponsor Proceeds: £990m\nSponsor Investment: £400m\nMoM Multiple: 2.48x\n```\n\n### Step 7: Returns Calculation\n\n**IRR Calculation:**\n```excel\nYear 0: (£400m) - Initial investment\nYear 1-4: £0 - No interim cash flows\nYear 5: £990m - Exit proceeds\n\nIRR = 19.9%\n```\n\n**Returns Attribution:**\n```excel\nMultiple Expansion: 0% (10x entry/exit)\nEBITDA Growth: £44m × 10x = £440m\nDebt Paydown: £450m\nTotal Value Creation: £890m\n```\n\n## Advanced Features\n\n### PIK Toggle\n```excel\nIf DSCR < 1.0x:\n  PIK Interest = True\n  Cash Interest = 0\n  Debt Balance += PIK Interest\n```\n\n### Revolver Functionality\n```excel\nIf Cash Available < 0:\n  Draw = Min(-Cash Available, Revolver Capacity)\nElse:\n  Repay = Min(Cash Available, Revolver Balance)\n```\n\n### Management Options Pool\n```excel\nOption Pool: 10% of equity\nStrike Price: Initial equity value\nPayout: (Exit Equity - Strike) × 10%\n```\n\n## Model Checks & Balances\n\n### Key Ratios to Monitor\n\n```excel\nLeverage (Debt/EBITDA):\nYear 0: 6.0x → Year 5: 3.1x ✓\n\nInterest Coverage (EBITDA/Interest):\nMinimum: 2.0x → All years > 2.5x ✓\n\nDSCR (CFADS/Debt Service):\nMinimum: 1.1x → All years > 1.2x ✓\n```\n\n### Balance Sheet Check\n```excel\nAssets = Liabilities + Equity\nAll periods must balance ✓\n```\n\n## Sensitivity Analysis\n\n### Data Table Setup\n\n**Entry Multiple vs Exit Multiple:**\n```excel\n        8.0x   9.0x   10.0x  11.0x  12.0x\n9.0x    15%    18%    21%    24%    27%\n10.0x   12%    15%    18%    21%    24%\n11.0x   9%     12%    15%    18%    21%\n```\n\n**Revenue Growth vs Margin Expansion:**\n```excel\n        0%     3%     5%     7%     10%\n0bps    8%     12%    15%    18%    22%\n50bps   11%    15%    18%    21%    25%\n100bps  14%    18%    21%    24%    28%\n```\n\n## Model Best Practices\n\n### Structure\n- Separate inputs, calculations, outputs\n- Clear labelling and units\n- Consistent formatting\n- Version control\n\n### Flexibility\n- Scenario toggles\n- Dynamic debt capacity\n- Variable hold periods\n- Multiple exit options\n\n### Documentation\n- Assumption sources\n- Calculation methodology\n- Key dependencies\n- Model limitations",
+            "questions": [
+              {
+                "text": "What is 'cash available for debt repayment' in an LBO model?",
+                "type": "multiple_choice",
+                "difficulty": "medium",
+                "options": [
+                  { "text": "EBITDA minus interest, taxes, working capital, and CapEx", "isCorrect": true, "explanation": "Correct! This represents free cash flow available to pay down debt." },
+                  { "text": "Net Income plus depreciation", "isCorrect": false, "explanation": "This ignores working capital and CapEx, which consume cash." },
+                  { "text": "EBITDA minus interest only", "isCorrect": false, "explanation": "Must also deduct taxes, working capital changes, and CapEx." },
+                  { "text": "Total revenue minus all expenses", "isCorrect": false, "explanation": "This doesn't properly calculate cash generation for debt service." }
+                ]
+              },
+              {
+                "text": "Why model a revolver separately from term loans?",
+                "type": "multiple_choice",
+                "difficulty": "hard",
+                "options": [
+                  { "text": "It can be drawn/repaid based on cash needs", "isCorrect": true, "explanation": "Correct! Revolvers provide flexibility to manage temporary cash shortfalls." },
+                  { "text": "Revolvers have higher interest rates", "isCorrect": false, "explanation": "Revolvers typically have lower rates as they're senior and secured." },
+                  { "text": "Required by accounting standards", "isCorrect": false, "explanation": "This is a financing structure choice, not an accounting requirement." },
+                  { "text": "Revolvers don't require interest payments", "isCorrect": false, "explanation": "Revolvers require interest payments on drawn amounts." }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

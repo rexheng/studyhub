@@ -1,0 +1,77 @@
+{
+  "track": {
+    "title": "Complete Investment Banking Interview Mastery",
+    "description": "Comprehensive technical and behavioral interview preparation for investment banking roles",
+    "slug": "complete-ib-interview-mastery",
+    "modules": [
+      {
+        "title": "Behavioral Interview Excellence",
+        "description": "Master the behavioral and fit questions in investment banking interviews",
+        "order": 5,
+        "slug": "behavioral-interview",
+        "lessons": [
+          {
+            "title": "Why Investment Banking",
+            "slug": "why-investment-banking",
+            "order": 1,
+            "content": "# Why Investment Banking?\n\n## The Core Question\n\nThis is THE most important question. Your answer reveals:\n- Genuine interest vs prestige seeking\n- Understanding of the role\n- Long-term commitment\n- Cultural fit\n\n## Strong Answer Framework\n\n### 1. Show Genuine Interest\n\n**Transaction Focus**\n- \"I'm fascinated by M&A and how deals transform industries\"\n- \"I want to advise CEOs on their most critical decisions\"\n- \"The strategic impact of transactions excites me\"\n\n**Market Dynamics**\n- \"I love following how market movements affect deal-making\"\n- \"The intersection of strategy and finance is compelling\"\n- \"Every day brings new challenges and learning\"\n\n### 2. Demonstrate Understanding\n\n**Role Clarity**\n- Financial analysis and modelling\n- Client interaction and relationship building\n- Project management across multiple deals\n- Long hours but accelerated learning\n\n**Industry Knowledge**\n- Recent deals in target group\n- Market trends affecting the sector\n- Key players and competitors\n- Regulatory environment\n\n### 3. Connect Your Background\n\n**Academic Preparation**\n- Relevant coursework (finance, accounting, economics)\n- Academic projects or research\n- Investment clubs or competitions\n- Strong analytical foundation\n\n**Professional Experience**\n- Prior internships (even if not IB)\n- Transferable skills demonstrated\n- Leadership and teamwork examples\n- Work ethic proven\n\n### 4. Show Commitment\n\n**Career Vision**\n- \"I want to build expertise in [specific sector]\"\n- \"Long-term goal of senior advisory role\"\n- \"Foundation for private equity/corporate development\"\n- Clear 2-5 year plan\n\n## Example Answer Structure\n\n**Opening Hook**\n\"I'm drawn to investment banking because I want to work at the intersection of strategy and finance, advising companies on transformational decisions.\"\n\n**Personal Connection**\n\"My interest started when [specific example - internship, class, deal you followed]. I realized that bankers play a crucial role in shaping industries.\"\n\n**Skills Match**\n\"My background in [relevant experience] has prepared me for the analytical rigor, and I thrive in fast-paced, team-oriented environments.\"\n\n**Specific to Firm**\n\"I'm particularly excited about [Bank Name]'s strength in [specific area], especially your recent work on [specific deal].\"\n\n**Forward Looking**\n\"I'm eager to contribute while developing expertise in [sector/product], with the goal of becoming a trusted advisor to clients.\"\n\n## Common Mistakes to Avoid\n\n### Red Flag Answers\n❌ \"For the money\" (even if true)\n❌ \"It's prestigious\" (shallow)\n❌ \"Good exit opportunities\" (not committed)\n❌ \"I like Excel\" (too narrow)\n❌ \"Everyone else is doing it\" (no conviction)\n\n### Weak Reasoning\n- Generic answers without specifics\n- No connection to personal experience\n- Lack of industry knowledge\n- Unrealistic expectations\n- No long-term vision\n\n## Addressing Concerns\n\n### \"But you don't have IB experience\"\n\"While I haven't worked in banking directly, my experience in [field] developed similar skills: [specific examples]. I've also [self-study/networking/research] to prepare.\"\n\n### \"The hours are brutal\"\n\"I understand the commitment required. During [example], I regularly worked 80+ hours while maintaining high performance. I view it as an investment in accelerated learning.\"\n\n### \"Why not consulting/PE/corporate?\"\n\"While those are great careers, investment banking offers [specific differentiators]: deal exposure, technical skill development, and the opportunity to see multiple industries.\"\n\n## Tailoring by Bank Type\n\n### Bulge Bracket\n- Emphasise big picture thinking\n- Interest in cross-border deals\n- Ability to handle complexity\n- Global perspective\n\n### Elite Boutique\n- Focus on deal execution\n- Entrepreneurial mindset\n- Desire for responsibility\n- Technical excellence\n\n### Middle Market\n- Relationship building skills\n- Interest in fuller deal lifecycle\n- Regional market knowledge\n- Client service orientation\n\n## Follow-Up Questions\n\n**Be Ready For:**\n- \"What other careers are you considering?\"\n- \"Where do you see yourself in 5 years?\"\n- \"What if you don't get an IB offer?\"\n- \"Why this bank specifically?\"\n- \"What concerns you about banking?\"\n\n## Authenticity Matters\n\n**Your Genuine Reasons**\n- Reflect on real motivations\n- Find authentic connections\n- Use personal examples\n- Show enthusiasm naturally\n\n**It's OK to Acknowledge:**\n- The challenge excites you\n- You have lots to learn\n- The lifestyle is demanding\n- You're choosing this deliberately",
+            "questions": [
+              {
+                "text": "What's the biggest mistake in answering 'Why Investment Banking?'",
+                "type": "multiple_choice",
+                "difficulty": "easy",
+                "options": [
+                  { "text": "Focusing primarily on money or exit opportunities", "isCorrect": true, "explanation": "Correct! These answers suggest you're not committed to the role itself." },
+                  { "text": "Mentioning specific deals", "isCorrect": false, "explanation": "Specific deals show genuine interest and research." },
+                  { "text": "Discussing the long hours", "isCorrect": false, "explanation": "Acknowledging challenges shows realistic expectations." },
+                  { "text": "Connecting to your background", "isCorrect": false, "explanation": "This is essential to show fit and preparation." }
+                ]
+              },
+              {
+                "text": "How should you address lack of IB experience?",
+                "type": "multiple_choice",
+                "difficulty": "medium",
+                "options": [
+                  { "text": "Show transferable skills and demonstrate preparation efforts", "isCorrect": true, "explanation": "Correct! Focus on relevant skills you've developed and steps taken to prepare." },
+                  { "text": "Apologise for the gap", "isCorrect": false, "explanation": "Don't apologise; confidently explain your path and preparation." },
+                  { "text": "Say experience doesn't matter", "isCorrect": false, "explanation": "Acknowledge the gap but show how you bridge it." },
+                  { "text": "Change the subject", "isCorrect": false, "explanation": "Address concerns directly and confidently." }
+                ]
+              }
+            ]
+          },
+          {
+            "title": "Deal and Market Discussion",
+            "slug": "deal-market-discussion",
+            "order": 2,
+            "content": "# Deal and Market Discussion\n\n## Recent Deal Analysis\n\n### Preparation Framework\n\n**For Each Deal, Know:**\n1. **Parties involved** (buyer, seller, advisors)\n2. **Deal size and structure** (price, premium, consideration)\n3. **Strategic rationale** (why this deal makes sense)\n4. **Your opinion** (good/bad deal and why)\n5. **Market context** (industry trends driving deal)\n\n### Example Deal Discussion\n\n**Opening**\n\"I've been following [Deal Name] closely because it represents [key theme - consolidation, digital transformation, etc.].\"\n\n**Deal Overview**\n\"[Buyer] acquired [Seller] for [Price] at [Multiple/Premium], funded through [Structure].\"\n\n**Strategic Rationale**\n\"The deal makes strategic sense because:\n- [Synergy 1 - e.g., geographic expansion]\n- [Synergy 2 - e.g., product complementarity]\n- [Synergy 3 - e.g., cost savings]\"\n\n**Your Analysis**\n\"I believe this was a [good/challenging] deal because [specific reasons]. The [premium/multiple] seems [justified/aggressive] given [market conditions/synergies/risks].\"\n\n**Broader Implications**\n\"This deal signals [industry trend], which could drive further [consolidation/innovation/competition].\"\n\n## Market Views\n\n### Current Market Themes\n\n**Technology Disruption**\n- Digital transformation deals\n- Traditional companies acquiring tech\n- Platform consolidation\n- AI/ML capabilities\n\n**ESG & Sustainability**\n- Energy transition\n- Green financing\n- Impact investing\n- Regulatory pressures\n\n**Post-Pandemic Shifts**\n- Supply chain reshoring\n- Remote work infrastructure\n- Healthcare innovation\n- E-commerce acceleration\n\n**Geopolitical Factors**\n- Trade tensions\n- Currency volatility\n- Regulatory changes\n- Cross-border complexity\n\n### Sector-Specific Views\n\n**Technology**\n\"The sector is seeing consolidation as companies seek scale for AI investments. Valuations have normalized from 2021 peaks, creating opportunities.\"\n\n**Healthcare**\n\"Biotech valuations are attractive, driving big pharma M&A. Digital health is maturing with selective deals rather than blanket enthusiasm.\"\n\n**Financial Services**\n\"Regional bank consolidation continues post-crisis. Fintech partnerships are preferred over acquisitions due to valuation gaps.\"\n\n**Energy**\n\"Traditional energy companies are acquiring renewable assets for transition. Midstream consolidation continues for scale efficiencies.\"\n\n## Live Deal Pitch\n\n### Structure Your Pitch\n\n**Identify Opportunity**\n\"I would recommend [Company A] acquire [Company B]...\"\n\n**Strategic Rationale**\n- Revenue synergies\n- Cost synergies\n- Market position\n- Capability acquisition\n\n**Valuation Approach**\n\"Based on recent precedents trading at [X] multiple and Company B's [metric], I'd value it at approximately [amount].\"\n\n**Deal Structure**\n\"I'd recommend [% cash/stock] because [reasoning about balance sheet, dilution, etc.]\"\n\n**Risk Mitigation**\n\"Key risks include [list], which could be addressed through [solutions].\"\n\n### Example Pitch\n\n\"I'd recommend Microsoft acquire Databricks.\n\n**Why:** Databricks would strengthen Microsoft's data analytics capabilities against AWS and Google Cloud. With enterprises increasingly needing unified data platforms, this would position Azure as the leader.\n\n**Valuation:** At Snowflake's 20x revenue multiple, Databricks' $2B revenue suggests $40B valuation, though Microsoft might pay $50B for strategic value.\n\n**Structure:** 70% cash, 30% stock to preserve balance sheet flexibility while giving Databricks shareholders upside.\n\n**Risks:** Integration complexity and talent retention, addressed through earnouts and retention packages.\"\n\n## Industry Trends\n\n### How to Discuss Trends\n\n1. **State the trend clearly**\n2. **Provide evidence/examples**\n3. **Explain driving forces**\n4. **Discuss implications**\n5. **Connect to opportunities**\n\n### Current Hot Topics\n\n**AI Integration**\n\"Every industry is evaluating AI integration. We're seeing premiums for companies with proprietary data sets and AI capabilities.\"\n\n**Deglobalisation**\n\"Supply chain resilience is driving reshoring deals. Companies are paying premiums for domestic capacity.\"\n\n**Private Credit Growth**\n\"Direct lenders are competing with banks, providing alternative financing for larger deals.\"\n\n**SPAC Aftermath**\n\"De-SPAC take-privates are creating opportunities as many trade below trust value.\"\n\n## Reading the Market\n\n### Key Indicators to Follow\n\n**M&A Activity**\n- Deal volumes and values\n- Premium trends\n- Financing availability\n- Regulatory approvals\n\n**Capital Markets**\n- IPO pipeline\n- Credit spreads\n- Equity valuations\n- Interest rates\n\n**Economic Factors**\n- GDP growth\n- Inflation\n- Employment\n- Consumer confidence\n\n### Sources to Monitor\n\n**Daily**\n- Financial Times\n- Wall Street Journal\n- Bloomberg/Reuters\n- Bank research notes\n\n**Weekly**\n- Economist\n- Industry publications\n- Dealbook newsletter\n- Podcasts (Acquired, Business Breakdowns)\n\n## Common Questions\n\n**\"What deal interests you most?\"**\nPick something recent, relevant to the bank's strength, and that you genuinely understand.\n\n**\"What's your market outlook?\"**\nBalance optimism with realism, acknowledge uncertainties, focus on opportunities.\n\n**\"Pitch me a deal\"**\nHave 2-3 ideas ready, make it relevant to current market themes.\n\n**\"Why did X deal fail?\"**\nDiscuss regulatory, valuation, strategic, or execution issues objectively.\n\n## Pro Tips\n\n1. **Read about deals the bank advised on**\n2. **Have opinions but be open to other views**\n3. **Connect deals to broader themes**\n4. **Understand the buyer's perspective**\n5. **Consider alternative structures**\n6. **Think about next moves post-deal**",
+            "questions": [
+              {
+                "text": "When discussing a recent deal, what's most important to convey?",
+                "type": "multiple_choice",
+                "difficulty": "medium",
+                "options": [
+                  { "text": "Your analytical thinking and understanding of strategic rationale", "isCorrect": true, "explanation": "Correct! Show you can think critically about why deals happen and their implications." },
+                  { "text": "Memorised deal statistics", "isCorrect": false, "explanation": "Facts are important but analysis and opinion matter more." },
+                  { "text": "Criticism of the deal structure", "isCorrect": false, "explanation": "Balance is key; understand both positives and negatives." },
+                  { "text": "The exact premium paid", "isCorrect": false, "explanation": "Specific numbers help but understanding the 'why' is crucial." }
+                ]
+              },
+              {
+                "text": "How should you respond if asked to pitch a deal idea?",
+                "type": "multiple_choice",
+                "difficulty": "hard",
+                "options": [
+                  { "text": "Present a logical opportunity with clear strategic rationale and realistic valuation", "isCorrect": true, "explanation": "Correct! Show structured thinking combining strategy, valuation, and execution." },
+                  { "text": "Suggest the biggest deal possible", "isCorrect": false, "explanation": "Size doesn't matter; logic and feasibility do." },
+                  { "text": "Only pitch deals in the interviewer's coverage area", "isCorrect": false, "explanation": "You can pitch any sector if you understand it well." },
+                  { "text": "Avoid specific numbers", "isCorrect": false, "explanation": "Rough valuation shows you understand deal math." }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

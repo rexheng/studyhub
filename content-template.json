@@ -1,0 +1,35 @@
+{
+  "track": {
+    "title": "Investment Banking",
+    "description": "Comprehensive preparation for IB roles",
+    "slug": "investment-banking",
+    "modules": [
+      {
+        "title": "Foundations",
+        "description": "Core concepts of investment banking",
+        "order": 1,
+        "slug": "foundations",
+        "lessons": [
+          {
+            "title": "Industry Overview",
+            "slug": "industry-overview",
+            "order": 1,
+            "content": "# Industry Overview\n\nInvestment banking is...",
+            "questions": [
+              {
+                "text": "What is the primary function of an investment bank?",
+                "type": "multiple_choice",
+                "difficulty": "easy",
+                "options": [
+                  { "text": "Raising capital for companies", "isCorrect": true, "explanation": "IBs help companies raise capital via debt and equity." },
+                  { "text": "Taking deposits from individuals", "isCorrect": false },
+                  { "text": "Providing insurance", "isCorrect": false }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}
